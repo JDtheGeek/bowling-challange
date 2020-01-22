@@ -1,5 +1,5 @@
 {
-  "name": "bowling-challenge",
+  "name": "bowling-scorecard",
   "version": "1.0.0",
   "description": "Scorecard for Ten-pin Bowling",
   "main": "scorecard.js",
@@ -7,23 +7,23 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --passWithNoTests"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JDtheGeek/bowling-challenge.git"
+    "url": "git+https://github.com/JDtheGeek/bowling-scorecard.git"
   },
   "author": "John Dennehy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JDtheGeek/bowling-challenge/issues"
+    "url": "https://github.com/JDtheGeek/bowling-scorecard/issues"
   },
-  "homepage": "https://github.com/JDtheGeek/bowling-challenge#readme",
+  "homepage": "https://github.com/JDtheGeek/bowling-scorecard#readme",
   "devDependencies": {
     "eslint": "^6.5.1",
-    "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^25.1.0",
     "prettier": "1.18.2"
   }
 }
