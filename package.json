@@ -2,12 +2,12 @@
   "name": "bowling-challenge",
   "version": "1.0.0",
   "description": "Scorecard for Ten-pin Bowling",
-  "main": "scorecard.js",
+  "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,10 +20,14 @@
   },
   "homepage": "https://github.com/JDtheGeek/bowling-challenge#readme",
   "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-jest": "^25.1.0",
     "eslint": "^6.5.1",
-    "eslint-config-google": "^0.14.0",
+    "eslint-config-airbnb": "18.0.1",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^25.1.0",
     "prettier": "1.18.2"
   }
 }

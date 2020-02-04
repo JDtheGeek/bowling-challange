@@ -1,123 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="styles/style.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Graduate|Patrick+Hand+SC&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="scripts/ball.js"></script>
-    <script src="scripts/frame.js"></script>
-    <script src="scripts/scorecard.js"></script>
-    <script src="scripts/interface.js"></script>
-    <title>Bowling Scorecard</title>
-  </head>
-  <body>
-    <header>
-      <h1>Bowling Scorecard</h1>
-      <img class='logo'src="images/ten-pin-bowling-2385094_640.png" alt="logo">
-    </header>
-    <main>
-      <div class="instructions">
-        <h2>Instructions</h2>
-        <p>Each time you play a ball, simply click the pin to the right with the number of pins you knocked down.</p>
 
-      </div>
-      <br />
-      <div class="pins">
-        <div class="pin" id='pin_01'>1</div>
-        <div class="pin" id='pin_02'>2</div>
-        <div class="pin" id='pin_03'>3</div>
-        <div class="pin" id='pin_04'>4</div>
-        <div class="pin" id='pin_05'>5</div>
-        <div class="pin" id='pin_06'>6</div>
-        <div class="pin" id='pin_07'>7</div>
-        <div class="pin" id='pin_08'>8</div>
-        <div class="pin" id='pin_09'>9</div>
-        <div class="pin" id='pin_10'>10</div>
-        <div class="gutter_ball" id='pin_00'>Gutter ball</div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="styles/style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Graduate|Patrick+Hand+SC&display=swap" rel="stylesheet" />
 
-      <div class="scorecard">
-        <div class="frame" id="frame01">
-          <div class="number">Frame 1</div>
-          <div class="left_area"></div>
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="bottom_area"></div>
-        </div>
-        <div class="frame" id="frame02">
-          <div class="number">Frame 2</div>
-          <div class="left_area"></div>
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="bottom_area"></div>
-        </div>
-        <div class="frame" id="frame03">
-          <div class="number">Frame 3</div>
-          <div class="left_area"></div>
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="bottom_area"></div>
-        </div>
-        <div class="frame" id="frame04">
-          <div class="number">Frame 4</div>
-          <div class="left_area"></div>
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="bottom_area"></div>
-        </div>
-        <div class="frame" id="frame05">
-          <div class="number">Frame 5</div>
-          <div class="left_area"></div>
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="bottom_area"></div>
-        </div>
-        <div class="frame" id="frame06">
-          <div class="number">Frame 6</div>
-          <div class="left_area"></div>
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="bottom_area"></div>
-        </div>
-        <div class="frame" id="frame07">
-          <div class="number">Frame 7</div>
-          <div class="left_area"></div>
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="bottom_area"></div>
-        </div>
-        <div class="frame" id="frame08">
-          <div class="number">Frame 8</div>
-          <div class="left_area"></div>
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="bottom_area"></div>
-        </div>
-        <div class="frame" id="frame09">
-          <div class="number">Frame 9</div>
-          <div class="left_area"></div>
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="bottom_area"></div>
-        </div>
-        <div class="frame" id="frame10">
-          <div class="number">Frame 10</div>
-          <div class="left_area"></div>
-          <div class="box" id="box1"></div>
-          <div class="box" id="box2"></div>
-          <div class="box" id="fill_in"></div>
-          <div class="bottom_area"></div>
-        </div>
+  <title>Bowling Scorecard</title>
+</head>
+
+<body>
+  <header>
+    <h1>Bowling Scorecard</h1>
+    <img class='logo' src="images/ten-pin-bowling-2385094_640.png" alt="logo">
+  </header>
+  <main>
+    <div class="instructions">
+      <h2>Instructions</h2>
+      <p>Each time you play a ball, simply click the pin to the right with the number of pins you knocked down.</p>
+
+    </div>
+    <br />
+    <div class="pins">
+      <div class="pin" id='pin_01'>1</div>
+      <div class="pin" id='pin_02'>2</div>
+      <div class="pin" id='pin_03'>3</div>
+      <div class="pin" id='pin_04'>4</div>
+      <div class="pin" id='pin_05'>5</div>
+      <div class="pin" id='pin_06'>6</div>
+      <div class="pin" id='pin_07'>7</div>
+      <div class="pin" id='pin_08'>8</div>
+      <div class="pin" id='pin_09'>9</div>
+      <div class="pin" id='pin_10'>10</div>
+      <div class="gutter_ball" id='pin_00'>Gutter ball</div>
+    </div>
+
+    <div class="scorecard">
+      <div class="frame" id="frame01">
+        <div class="number">Frame 1</div>
+        <div class="left_area"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="bottom_area"></div>
       </div>
-    </main>
-    <footer>
-      <a href="http://www.github.com/JDtheGeek" target="_blank">By JDtheGeek</a>
-    </footer>
-  </body>
+      <div class="frame" id="frame02">
+        <div class="number">Frame 2</div>
+        <div class="left_area"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="bottom_area"></div>
+      </div>
+      <div class="frame" id="frame03">
+        <div class="number">Frame 3</div>
+        <div class="left_area"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="bottom_area"></div>
+      </div>
+      <div class="frame" id="frame04">
+        <div class="number">Frame 4</div>
+        <div class="left_area"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="bottom_area"></div>
+      </div>
+      <div class="frame" id="frame05">
+        <div class="number">Frame 5</div>
+        <div class="left_area"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="bottom_area"></div>
+      </div>
+      <div class="frame" id="frame06">
+        <div class="number">Frame 6</div>
+        <div class="left_area"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="bottom_area"></div>
+      </div>
+      <div class="frame" id="frame07">
+        <div class="number">Frame 7</div>
+        <div class="left_area"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="bottom_area"></div>
+      </div>
+      <div class="frame" id="frame08">
+        <div class="number">Frame 8</div>
+        <div class="left_area"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="bottom_area"></div>
+      </div>
+      <div class="frame" id="frame09">
+        <div class="number">Frame 9</div>
+        <div class="left_area"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="bottom_area"></div>
+      </div>
+      <div class="frame" id="frame10">
+        <div class="number">Frame 10</div>
+        <div class="left_area"></div>
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="fill_in"></div>
+        <div class="bottom_area"></div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <a href="http://www.github.com/JDtheGeek" target="_blank">By JDtheGeek</a>
+  </footer>
+  <!-- SCRIPTS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script type='module' src="/index.js"></script>
+</body>
+
 </html>
